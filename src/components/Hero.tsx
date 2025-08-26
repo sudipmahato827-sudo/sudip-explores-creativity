@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowDown, Github, Instagram, Linkedin, Twitter, Facebook, MessageCircle } from "lucide-react";
-import sudipProfile from "@/assets/sudip-profile.png";
+import sudipProfile from "@/assets/sudip-profile.jpg";
 
 const Hero = () => {
   const socialLinks = [
