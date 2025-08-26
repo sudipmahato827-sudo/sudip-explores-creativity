@@ -132,32 +132,77 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right side - Profile Image */}
+          {/* Right side - AI-Enhanced Profile Image */}
           <div className="flex-1 flex justify-center lg:justify-end">
             <div className="relative">
               <div className="w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] relative">
-                {/* Glowing border effect */}
-                <div className="absolute inset-0 bg-gradient-primary rounded-full blur-xl opacity-30 animate-pulse"></div>
-                <div className="absolute inset-2 bg-gradient-secondary rounded-full blur-lg opacity-20 animate-pulse delay-500"></div>
+                {/* AI Neural Network Animation */}
+                <div className="absolute inset-0 opacity-30">
+                  <svg className="w-full h-full animate-spin-slow" viewBox="0 0 400 400">
+                    <defs>
+                      <radialGradient id="neuralGradient" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="0.4"/>
+                        <stop offset="100%" stopColor="hsl(var(--accent))" stopOpacity="0.1"/>
+                      </radialGradient>
+                    </defs>
+                    {/* Neural nodes */}
+                    <circle cx="100" cy="100" r="3" fill="hsl(var(--primary))" className="animate-pulse">
+                      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="300" cy="150" r="2" fill="hsl(var(--accent))" className="animate-pulse delay-300">
+                      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="200" cy="300" r="2.5" fill="hsl(var(--secondary))" className="animate-pulse delay-700">
+                      <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+                    </circle>
+                    {/* Neural connections */}
+                    <path d="M100,100 Q200,50 300,150" stroke="hsl(var(--primary))" strokeWidth="1" fill="none" opacity="0.3" className="animate-pulse"/>
+                    <path d="M300,150 Q250,225 200,300" stroke="hsl(var(--accent))" strokeWidth="1" fill="none" opacity="0.3" className="animate-pulse delay-500"/>
+                  </svg>
+                </div>
                 
-                {/* Profile image container */}
-                <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/20 shadow-elevated">
+                {/* Multi-layered glowing effects */}
+                <div className="absolute inset-0 bg-gradient-primary rounded-full blur-3xl opacity-20 animate-pulse"></div>
+                <div className="absolute inset-2 bg-gradient-secondary rounded-full blur-2xl opacity-15 animate-pulse delay-500"></div>
+                <div className="absolute inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur-xl opacity-25 animate-pulse delay-1000"></div>
+                
+                {/* Profile image container with holographic effect */}
+                <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-primary/30 shadow-elevated group">
+                  <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                   <img
                     src={sudipProfile}
-                    alt="Sudip Mahato - Web Developer"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                    alt="Sudip Mahato - AI-Enhanced Digital Developer"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 filter contrast-110 saturate-110"
                   />
-                  {/* Overlay gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent"></div>
+                  {/* Holographic scan line */}
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/20 to-transparent h-8 animate-scan opacity-0 group-hover:opacity-100"></div>
+                  {/* AI data overlay */}
+                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <div className="bg-card/90 backdrop-blur-sm rounded-lg p-2 text-xs">
+                      <div className="text-primary font-mono">AI_STATUS: ACTIVE</div>
+                      <div className="text-accent font-mono">SKILLS: LOADING...</div>
+                    </div>
+                  </div>
                 </div>
 
-                {/* Floating elements */}
-                <div className="absolute -top-4 -right-4 w-12 h-12 bg-accent rounded-full flex items-center justify-center shadow-accent-glow animate-bounce">
-                  <span className="text-accent-foreground font-bold">👨‍💻</span>
+                {/* Enhanced floating elements with AI theme */}
+                <div className="absolute -top-6 -right-6 w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center shadow-glow animate-float">
+                  <span className="text-2xl">🤖</span>
                 </div>
-                <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-glow animate-bounce delay-300">
-                  <span className="text-primary-foreground font-bold">🚀</span>
+                <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-gradient-secondary rounded-full flex items-center justify-center shadow-accent-glow animate-float delay-300">
+                  <span className="text-2xl">⚡</span>
                 </div>
+                <div className="absolute top-1/4 -left-4 w-12 h-12 bg-accent/80 rounded-full flex items-center justify-center shadow-accent-glow animate-bounce delay-700">
+                  <span className="text-lg">🧠</span>
+                </div>
+                <div className="absolute bottom-1/4 -right-4 w-12 h-12 bg-primary/80 rounded-full flex items-center justify-center shadow-glow animate-bounce delay-1000">
+                  <span className="text-lg">💡</span>
+                </div>
+                
+                {/* AI data points */}
+                <div className="absolute top-8 left-8 w-3 h-3 bg-cyan-400 rounded-full animate-ping opacity-60"></div>
+                <div className="absolute bottom-12 right-12 w-2 h-2 bg-green-400 rounded-full animate-ping delay-500 opacity-60"></div>
+                <div className="absolute top-1/2 right-6 w-2.5 h-2.5 bg-yellow-400 rounded-full animate-ping delay-1000 opacity-60"></div>
               </div>
             </div>
           </div>

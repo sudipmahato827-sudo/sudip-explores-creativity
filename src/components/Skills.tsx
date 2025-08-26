@@ -98,10 +98,16 @@ const Skills = () => {
 
   return (
     <section id="skills" className="py-20 relative overflow-hidden">
-      {/* Background effects */}
-      <div className="absolute inset-0">
-        <div className="absolute top-40 left-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-40 right-20 w-80 h-80 bg-accent/5 rounded-full blur-3xl"></div>
+      {/* AI-Enhanced Background effects */}
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-40 left-20 w-80 h-80 bg-gradient-primary rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-40 right-20 w-80 h-80 bg-gradient-secondary rounded-full blur-3xl animate-pulse delay-700"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-accent/10 to-primary/10 rounded-full blur-3xl animate-spin-slow"></div>
+        
+        {/* Floating code symbols */}
+        <div className="absolute top-20 left-1/4 text-6xl text-primary/10 animate-float">{'<}'}</div>
+        <div className="absolute bottom-20 right-1/4 text-6xl text-accent/10 animate-float delay-500">{'>'}</div>
+        <div className="absolute top-1/3 right-1/3 text-4xl text-secondary/10 animate-bounce delay-1000">{'{}'}</div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">

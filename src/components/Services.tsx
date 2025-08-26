@@ -142,11 +142,19 @@ const Services = () => {
 
   return (
     <section id="services" className="py-20 relative overflow-hidden">
-      {/* Background effects */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-primary opacity-5 rounded-full blur-2xl"></div>
+      {/* AI-Enhanced Background effects */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-primary rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-secondary rounded-full blur-3xl animate-pulse delay-500"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-r from-accent/30 to-primary/30 rounded-full blur-2xl animate-spin-slow"></div>
+        
+        {/* Service icons floating */}
+        <div className="absolute top-1/4 left-1/6 opacity-5">
+          <Globe className="w-20 h-20 text-primary animate-float" />
+        </div>
+        <div className="absolute bottom-1/4 right-1/6 opacity-5">
+          <Brain className="w-24 h-24 text-accent animate-float delay-700" />
+        </div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">

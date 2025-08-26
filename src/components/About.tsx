@@ -32,10 +32,20 @@ const About = () => {
 
   return (
     <section id="about" className="py-20 relative overflow-hidden">
-      {/* Background effects */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 right-20 w-72 h-72 bg-accent/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
+      {/* AI-Enhanced Background effects */}
+      <div className="absolute inset-0 opacity-40">
+        <div className="absolute top-20 right-20 w-72 h-72 bg-gradient-primary rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 left-20 w-72 h-72 bg-gradient-secondary rounded-full blur-3xl animate-pulse delay-1000"></div>
+        
+        {/* Neural network pattern */}
+        <svg className="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="aboutGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+              <circle cx="30" cy="30" r="1" fill="hsl(var(--primary))" opacity="0.5"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#aboutGrid)"/>
+        </svg>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
