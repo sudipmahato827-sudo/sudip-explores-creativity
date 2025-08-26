@@ -17,43 +17,84 @@ import {
 const Portfolio = () => {
   const projects = [
     {
-      title: "Personal Portfolio Website",
-      description: "This very website you're looking at - a modern, responsive portfolio built with React and Tailwind CSS",
+      title: "Modern Portfolio Website",
+      description: "This AI-enhanced portfolio you're viewing - featuring modern design, smooth animations, and responsive layout",
       category: "Web Development",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Vite", "AI Design"],
       status: "Live",
       icon: Code2,
       color: "text-blue-400",
       bgColor: "bg-blue-400/10",
       links: {
-        live: "#",
-        github: "#"
+        live: window.location.href,
+        github: "https://github.com/sudipmahato827-sudo"
       }
     },
     {
-      title: "Gaming Poster Collection",
-      description: "A series of vibrant gaming posters designed for PUBG and Free Fire communities",
-      category: "Graphic Design",
-      technologies: ["Digital Art", "Gaming Aesthetics", "Social Media"],
-      status: "Ongoing",
-      icon: Palette,
+      title: "Social Media Content Hub",
+      description: "Active content creation across Instagram, TikTok, and Facebook with gaming-focused posts and memes",
+      category: "Content Creation",
+      technologies: ["Social Media", "Content Strategy", "Visual Design", "Community"],
+      status: "Live",
+      icon: ImageIcon,
       color: "text-pink-400",
       bgColor: "bg-pink-400/10",
       links: {
-        view: "#"
+        view: "https://www.instagram.com/su__deep__01/",
+        tiktok: "https://www.tiktok.com/@sudeepmahato_01"
       }
     },
     {
-      title: "Flappy Bird Clone",
-      description: "A simple but engaging Flappy Bird-style game built to learn game development basics",
-      category: "Game Development",
-      technologies: ["Game Logic", "Physics", "UI Design"],
-      status: "Prototype",
-      icon: Play,
+      title: "Gaming Graphics Portfolio",
+      description: "Collection of gaming posters, thumbnails, and visual content for PUBG and Free Fire communities",
+      category: "Graphic Design",
+      technologies: ["Digital Art", "Gaming Aesthetics", "Poster Design", "Branding"],
+      status: "Ongoing",
+      icon: Palette,
       color: "text-purple-400",
       bgColor: "bg-purple-400/10",
       links: {
-        demo: "#"
+        view: "https://www.instagram.com/su__deep__01/"
+      }
+    },
+    {
+      title: "Learning Code Repository",
+      description: "Python and C programming exercises, small projects, and learning experiments on GitHub",
+      category: "Programming",
+      technologies: ["Python", "C Programming", "Git", "Learning Projects"],
+      status: "Ongoing",
+      icon: Code2,
+      color: "text-green-400",
+      bgColor: "bg-green-400/10",
+      links: {
+        github: "https://github.com/sudipmahato827-sudo"
+      }
+    },
+    {
+      title: "Game Development Experiments",
+      description: "Simple games and prototypes including Flappy Bird clones to learn game development fundamentals",
+      category: "Game Development",
+      technologies: ["Game Logic", "JavaScript", "HTML5 Canvas", "Game Physics"],
+      status: "Prototype",
+      icon: Play,
+      color: "text-orange-400",
+      bgColor: "bg-orange-400/10",
+      links: {
+        demo: "#demo-coming-soon"
+      }
+    },
+    {
+      title: "Professional Network",
+      description: "Building connections and sharing progress across LinkedIn, X (Twitter), and professional communities",
+      category: "Networking",
+      technologies: ["LinkedIn", "Professional Branding", "Networking", "Career Growth"],
+      status: "Live",
+      icon: Star,
+      color: "text-cyan-400",
+      bgColor: "bg-cyan-400/10",
+      links: {
+        linkedin: "https://www.linkedin.com/in/sudip-mahato-a39a83328/",
+        twitter: "https://x.com/su_deep_01"
       }
     }
   ];
@@ -175,29 +216,82 @@ const Portfolio = () => {
                     </div>
                   </div>
 
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 flex-wrap">
                     {project.links.live && (
-                      <Button variant="outline" size="sm" className="flex-1">
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        className="flex-1 min-w-0"
+                        onClick={() => window.open(project.links.live, '_blank')}
+                      >
                         <ExternalLink className="w-4 h-4 mr-2" />
                         Live
                       </Button>
                     )}
                     {project.links.github && (
-                      <Button variant="ghost" size="sm" className="flex-1">
+                      <Button 
+                        variant="ghost" 
+                        size="sm" 
+                        className="flex-1 min-w-0"
+                        onClick={() => window.open(project.links.github, '_blank')}
+                      >
                         <Github className="w-4 h-4 mr-2" />
                         Code
                       </Button>
                     )}
                     {project.links.demo && (
-                      <Button variant="outline" size="sm" className="flex-1">
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        className="flex-1 min-w-0"
+                        onClick={() => project.links.demo === '#demo-coming-soon' ? alert('Demo coming soon!') : window.open(project.links.demo, '_blank')}
+                      >
                         <Play className="w-4 h-4 mr-2" />
                         Demo
                       </Button>
                     )}
                     {project.links.view && (
-                      <Button variant="outline" size="sm" className="flex-1">
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        className="flex-1 min-w-0"
+                        onClick={() => window.open(project.links.view, '_blank')}
+                      >
                         <ImageIcon className="w-4 h-4 mr-2" />
                         View
+                      </Button>
+                    )}
+                    {project.links.tiktok && (
+                      <Button 
+                        variant="ghost" 
+                        size="sm" 
+                        className="flex-1 min-w-0"
+                        onClick={() => window.open(project.links.tiktok, '_blank')}
+                      >
+                        <Play className="w-4 h-4 mr-2" />
+                        TikTok
+                      </Button>
+                    )}
+                    {project.links.linkedin && (
+                      <Button 
+                        variant="ghost" 
+                        size="sm" 
+                        className="flex-1 min-w-0"
+                        onClick={() => window.open(project.links.linkedin, '_blank')}
+                      >
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        LinkedIn
+                      </Button>
+                    )}
+                    {project.links.twitter && (
+                      <Button 
+                        variant="ghost" 
+                        size="sm" 
+                        className="flex-1 min-w-0"
+                        onClick={() => window.open(project.links.twitter, '_blank')}
+                      >
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Twitter
                       </Button>
                     )}
                   </div>

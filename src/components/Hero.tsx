@@ -19,11 +19,36 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen bg-gradient-hero relative overflow-hidden">
-      {/* Animated background elements */}
+      {/* AI-Enhanced Background with Neural Network Pattern */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 w-60 h-60 bg-gradient-primary opacity-10 rounded-full blur-2xl animate-spin-slow"></div>
+        {/* Floating orbs with AI glow */}
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-primary rounded-full blur-3xl animate-pulse opacity-20"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-secondary rounded-full blur-3xl animate-pulse delay-1000 opacity-20"></div>
+        <div className="absolute top-1/3 right-1/3 w-60 h-60 bg-accent/30 rounded-full blur-2xl animate-spin-slow"></div>
+        
+        {/* Neural network lines */}
+        <div className="absolute inset-0 opacity-10">
+          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+                <circle cx="25" cy="25" r="1" fill="currentColor" className="text-primary/40"/>
+              </pattern>
+              <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="0.3"/>
+                <stop offset="100%" stopColor="hsl(var(--accent))" stopOpacity="0.1"/>
+              </linearGradient>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid)"/>
+            <path d="M0,300 Q400,100 800,300 T1600,300" stroke="url(#lineGradient)" strokeWidth="2" fill="none" className="animate-pulse"/>
+            <path d="M0,600 Q400,400 800,600 T1600,600" stroke="url(#lineGradient)" strokeWidth="1" fill="none" className="animate-pulse delay-500"/>
+          </svg>
+        </div>
+        
+        {/* Floating particles */}
+        <div className="absolute top-20 left-20 w-2 h-2 bg-primary rounded-full animate-bounce opacity-60"></div>
+        <div className="absolute top-40 right-32 w-1 h-1 bg-accent rounded-full animate-bounce delay-300 opacity-60"></div>
+        <div className="absolute bottom-40 left-32 w-1.5 h-1.5 bg-secondary rounded-full animate-bounce delay-700 opacity-60"></div>
+        <div className="absolute bottom-20 right-20 w-2 h-2 bg-primary rounded-full animate-bounce delay-1000 opacity-60"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -36,16 +61,26 @@ const Hero = () => {
                 👋 Welcome to my portfolio
               </Badge>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-                I'm{" "}
-                <span className="bg-gradient-primary bg-clip-text text-transparent drop-shadow-glow">
+                <span className="block text-2xl md:text-3xl lg:text-4xl font-normal text-muted-foreground mb-2">
+                  Hi, I'm
+                </span>
+                <span className="bg-gradient-primary bg-clip-text text-transparent drop-shadow-glow relative">
                   Sudip Mahato
+                  <div className="absolute -top-2 -right-2 w-4 h-4 bg-accent rounded-full animate-ping"></div>
+                </span>
+                <span className="block text-xl md:text-2xl lg:text-3xl font-medium text-accent mt-2">
+                  Creative Developer & Digital Explorer
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl">
-                A passionate{" "}
-                <span className="text-accent font-medium">explorer</span> of web design, programming, 
-                graphic design, and content creation. Building my way up from{" "}
-                <span className="text-primary font-medium">Nepal</span> 🇳🇵
+              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
+                Transforming ideas into digital experiences through{" "}
+                <span className="text-accent font-medium hover:text-primary transition-colors cursor-pointer">code</span>,{" "}
+                <span className="text-primary font-medium hover:text-accent transition-colors cursor-pointer">design</span>,{" "}
+                and <span className="text-secondary font-medium hover:text-primary transition-colors cursor-pointer">creativity</span>.
+                <br />
+                <span className="text-sm text-muted-foreground/80 mt-2 inline-block">
+                  🚀 Building from Nepal 🇳🇵 • Learning & Growing Daily
+                </span>
               </p>
             </div>
 
