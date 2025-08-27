@@ -116,7 +116,7 @@ const Skills = () => {
             Skills & Abilities
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            What I'm{" "}
+            Skills I have in my dream.{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Learning
             </span>
