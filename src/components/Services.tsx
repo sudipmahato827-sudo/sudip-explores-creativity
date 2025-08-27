@@ -163,7 +163,7 @@ const Services = () => {
             Services & Offerings
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            What I Can{" "}
+            Guff chodna sakna kura haru{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Help With
             </span>
