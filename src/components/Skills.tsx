@@ -21,10 +21,10 @@ const Skills = () => {
       color: "text-blue-400",
       bgColor: "bg-blue-400/10",
       skills: [
-        { name: "HTML/CSS", level: 70, description: "Building responsive layouts" },
-        { name: "JavaScript", level: 50, description: "Interactive web features" },
-        { name: "React Basics", level: 40, description: "Component-based development" },
-        { name: "Portfolio Design", level: 65, description: "Personal project experience" },
+        { name: "HTML/CSS", level: 0, description: "Building responsive layouts" },
+        { name: "JavaScript", level: 0, description: "Interactive web features" },
+        { name: "React Basics", level: 0, description: "Component-based development" },
+        { name: "Portfolio Design", level: 0, description: "Personal project experience" },
       ]
     },
     {
@@ -33,10 +33,10 @@ const Skills = () => {
       color: "text-green-400",
       bgColor: "bg-green-400/10",
       skills: [
-        { name: "Python", level: 60, description: "Scripting and basic projects" },
-        { name: "C Programming", level: 45, description: "Fundamental programming concepts" },
-        { name: "Problem Solving", level: 55, description: "Logical thinking development" },
-        { name: "Version Control", level: 35, description: "Git basics for projects" },
+        { name: "Python", level: 0, description: "Scripting and basic projects" },
+        { name: "C Programming", level: 0, description: "Fundamental programming concepts" },
+        { name: "Problem Solving", level: 0, description: "Logical thinking development" },
+        { name: "Version Control", level: 0, description: "Git basics for projects" },
       ]
     },
     {
@@ -45,10 +45,10 @@ const Skills = () => {
       color: "text-purple-400",
       bgColor: "bg-purple-400/10",
       skills: [
-        { name: "Game Logic", level: 50, description: "Flappy Bird style games" },
-        { name: "Basic Physics", level: 40, description: "Simple game mechanics" },
-        { name: "UI Design", level: 45, description: "Game interface creation" },
-        { name: "Prototyping", level: 55, description: "Quick game concepts" },
+        { name: "Game Logic", level: 0, description: "Flappy Bird style games" },
+        { name: "Basic Physics", level: 0, description: "Simple game mechanics" },
+        { name: "UI Design", level: 0, description: "Game interface creation" },
+        { name: "Prototyping", level: 0, description: "Quick game concepts" },
       ]
     },
     {
@@ -57,10 +57,10 @@ const Skills = () => {
       color: "text-pink-400",
       bgColor: "bg-pink-400/10",
       skills: [
-        { name: "Gaming Posters", level: 75, description: "PUBG, Free Fire designs" },
-        { name: "Meme Creation", level: 80, description: "Social media content" },
-        { name: "Visual Composition", level: 60, description: "Layout and design principles" },
-        { name: "Digital Art", level: 50, description: "Creative digital artwork" },
+        { name: "Gaming Posters", level: 0, description: "PUBG, Free Fire designs" },
+        { name: "Meme Creation", level: 0, description: "Social media content" },
+        { name: "Visual Composition", level: 0, description: "Layout and design principles" },
+        { name: "Digital Art", level: 0, description: "Creative digital artwork" },
       ]
     },
     {
@@ -69,10 +69,10 @@ const Skills = () => {
       color: "text-cyan-400",
       bgColor: "bg-cyan-400/10",
       skills: [
-        { name: "AI Tools", level: 65, description: "ChatGPT, design assistants" },
-        { name: "Workflow Automation", level: 40, description: "Basic process optimization" },
-        { name: "Content Generation", level: 70, description: "AI-assisted creativity" },
-        { name: "Research Skills", level: 75, description: "Finding and using AI resources" },
+        { name: "AI Tools", level: 0, description: "ChatGPT, design assistants" },
+        { name: "Workflow Automation", level: 0, description: "Basic process optimization" },
+        { name: "Content Generation", level: 0, description: "AI-assisted creativity" },
+        { name: "Research Skills", level: 0, description: "Finding and using AI resources" },
       ]
     },
     {
@@ -81,10 +81,10 @@ const Skills = () => {
       color: "text-orange-400",
       bgColor: "bg-orange-400/10",
       skills: [
-        { name: "Social Media", level: 85, description: "Instagram, TikTok, Facebook" },
-        { name: "Content Strategy", level: 55, description: "Audience engagement" },
-        { name: "Video Editing", level: 45, description: "Basic video content" },
-        { name: "Community Building", level: 60, description: "Growing online presence" },
+        { name: "Social Media", level: 0, description: "Instagram, TikTok, Facebook" },
+        { name: "Content Strategy", level: 0, description: "Audience engagement" },
+        { name: "Video Editing", level: 0, description: "Basic video content" },
+        { name: "Community Building", level: 0, description: "Growing online presence" },
       ]
     }
   ];
