@@ -128,7 +128,7 @@ const Contact = () => {
       );
 
       toast({
-        title: "Message sent successfully! 🎉",
+        title: "instagram ma gar mula berojgar...eeuta berojgar ly aarko berojlai lai mail gareo🤣🤣🤣🙏",
         description: "Thank you for reaching out. I'll get back to you soon!",
       });
 
