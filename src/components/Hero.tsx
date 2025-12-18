@@ -5,7 +5,7 @@ import sudipProfile from "@/assets/sudip-profile.jpg";
 
 const Hero = () => {
   const socialLinks = [
-    { icon: Instagram, href: "https://www.instagram.com/su__deep__01/", label: "Instagram", color: "hover:text-pink-400" },
+    { icon: Instagram, href: "https://www.instagram.com/su__deep_01/", label: "Instagram", color: "hover:text-pink-400" },
     { icon: MessageCircle, href: "https://www.tiktok.com/@sudeepmahato_01", label: "TikTok", color: "hover:text-white" },
     { icon: Github, href: "https://github.com/sudipmahato827-sudo", label: "GitHub", color: "hover:text-gray-300" },
     { icon: Twitter, href: "https://x.com/su_deep_01", label: "X (Twitter)", color: "hover:text-blue-400" },
