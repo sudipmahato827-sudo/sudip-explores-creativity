@@ -16,7 +16,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Instagram, href: "https://www.instagram.com/su__deep__01/", label: "Instagram" },
+    { icon: Instagram, href: "https://www.instagram.com/su__deep_01/", label: "Instagram" },
     { icon: MessageCircle, href: "https://www.tiktok.com/@sudeepmahato_01", label: "TikTok" },
     { icon: Github, href: "https://github.com/sudipmahato827-sudo", label: "GitHub" },
     { icon: Twitter, href: "https://x.com/su_deep_01", label: "X (Twitter)" },

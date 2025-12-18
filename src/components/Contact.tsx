@@ -58,7 +58,7 @@ const Contact = () => {
   const socialLinks = [
     { 
       icon: Instagram, 
-      href: "https://www.instagram.com/su__deep__01/", 
+      href: "https://www.instagram.com/su__deep_01/", 
       label: "Instagram", 
       color: "hover:text-pink-400",
       bgColor: "hover:bg-pink-400/10"
