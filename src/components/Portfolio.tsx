@@ -40,7 +40,7 @@ const Portfolio = () => {
       color: "text-pink-400",
       bgColor: "bg-pink-400/10",
       links: {
-        view: "https://www.instagram.com/su__deep__01/",
+        view: "https://www.instagram.com/su__deep_01/",
         tiktok: "https://www.tiktok.com/@sudeepmahato_01"
       }
     },
@@ -54,7 +54,7 @@ const Portfolio = () => {
       color: "text-purple-400",
       bgColor: "bg-purple-400/10",
       links: {
-        view: "https://www.instagram.com/su__deep__01/"
+        view: "https://www.instagram.com/su__deep_01/"
       }
     },
     {
